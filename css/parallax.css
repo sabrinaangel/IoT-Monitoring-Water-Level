@@ -1,0 +1,15 @@
+
+
+.parallax-demo{
+  background: var(--color-white);
+  position: relative;
+  margin-top: 100px;
+}
+.parallax-demo h2{
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+.parallax-demo p{
+  line-height: 140%;
+  padding-bottom: 2rem;
+}

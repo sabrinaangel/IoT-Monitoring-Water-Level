@@ -1,0 +1,109 @@
+/* ..About Us.. */
+.team-member {
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Tambahkan transisi untuk efek hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.team-member img {
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  border: 5px solid #fff; /* Tambahkan border putih untuk efek frame */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Bayangan pada gambar */
+}
+
+.team-member:hover {
+  transform: translateY(-5px); /* Efek mengangkat saat hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
+}
+
+
+.team-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.progress-wrapper {
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.progress-fill {
+  width: 0%;
+  height: 30px;
+  background-color: #28a745;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  transition: width 0.4s ease-in-out;
+}
+.progress-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+.progress-button:hover {
+  background-color: #0056b3;
+}
+.container {
+  text-align: center;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.menu button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.chart-container {
+  width: 80%;
+  display: none;
+  margin: 0 auto;
+}
+.active {
+  display: block;
+}
+
+/* ...............Start Footer................... */
+.footer {
+  background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang footer dengan transparansi */
+  color: white; /* Warna teks footer */
+  width: 100%; /* Memastikan footer memenuhi lebar penuh */
+  position: relative; /* Memastikan footer berada di bawah konten */
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin-top: 20px;
+}
+/* ...............End Footer................... */

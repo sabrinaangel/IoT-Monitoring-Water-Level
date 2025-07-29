@@ -1,0 +1,48 @@
+/* Setting fade transition and default settings */
+body {
+    color: #000;
+    background-color: #f4f4f4;
+    transition: background-color 1s ease;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* panel styles */
+  .panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+  
+  /* colours */
+  .color-violet {
+    background-color: #89c2d9;
+  }
+  .color-indigo {
+    background-color: #468faf;
+  }
+  .color-blue {
+    background-color: #2a6f97;
+  }
+  .color-green {
+    background-color: #01497c;
+  }
+  .color-yellow {
+    background-color: #012a4a;
+  }
+  
+  /* styling for demo, can ignore */
+  h1, h2 {
+    font-family: "comic sans ms";
+    font-size: 3em;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+  }
+  a {
+    color: #4332CF;
+  }

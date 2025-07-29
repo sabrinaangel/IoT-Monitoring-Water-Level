@@ -1,0 +1,40 @@
+
+ /* ................Start Nav Bar................... */
+ #navbar {
+  transition: top 0.3s; /* Animasi saat navbar muncul dan menghilang */
+}
+
+.navbar {
+  background-color: #343a40; /* Warna latar belakang gelap */
+}
+.nav-link {
+  color: white; /* Mengubah warna teks menjadi putih */
+}
+
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7); /* Warna border untuk toggler */
+}
+
+/* Offcanvas Styles */
+.offcanvas {
+  background-color: rgba(0, 0, 0, 0.7) /* Warna latar belakang offcanvas */
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Garis bawah header offcanvas */
+}
+
+.offcanvas-title {
+  color: #ffffff; /* Warna teks untuk judul offcanvas */
+}
+
+.btn-close-white {
+  filter: invert(1); /* Mengubah warna close button menjadi putih */
+}
+
+/* ................End Nav Bar................... */
+

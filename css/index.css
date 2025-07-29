@@ -1,0 +1,389 @@
+
+:root {
+    --color-primary: #4e83d3; /* Warna utama yang digunakan di seluruh halaman */
+    --color-white: #fff; /* Warna putih untuk teks dan elemen lainnya */
+    --color-dark: #222; /* Warna gelap untuk teks atau latar belakang */
+    --transition: .4s ease; /* Durasi dan jenis transisi untuk animasi */
+  }
+  .container{
+    max-width: 1620px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* ................Start Nav Bar................... */
+  #navbar {
+    transition: top 0.3s; /* Animasi saat navbar muncul dan menghilang */
+  }
+  
+  .navbar {
+    background-color: #343a40; /* Warna latar belakang gelap */
+  }
+  .nav-link {
+    color: white; /* Mengubah warna teks menjadi putih */
+  }
+  
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.7); /* Warna border untuk toggler */
+  }
+  
+  /* Offcanvas Styles */
+  .offcanvas {
+    background-color: rgba(0, 0, 0, 0.7) /* Warna latar belakang offcanvas */
+  }
+  
+  .offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Garis bawah header offcanvas */
+  }
+  
+  .offcanvas-title {
+    color: #ffffff; /* Warna teks untuk judul offcanvas */
+  }
+  
+  .btn-close-white {
+    filter: invert(1); /* Mengubah warna close button menjadi putih */
+  }
+  
+  /* ................End Nav Bar................... */
+  
+  /* ................Start Header Section - Animation Wave................... */
+  header {
+    display: flex; /* Menggunakan Flexbox untuk tata letak */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    justify-content: center; /* Menyelaraskan item secara horizontal di tengah */
+    position: relative; /* Mengatur posisi relatif untuk elemen anak */
+    background: var(--color-primary); /* Menggunakan warna utama sebagai latar belakang */
+    height: 80vh; /* Mengatur tinggi header menjadi 100% dari tinggi viewport (BIru) */
+    width: 100%; /* Mengatur lebar header menjadi 100% dari lebar viewport */
+    overflow: hidden; /* Menyembunyikan elemen yang melampaui batas header */
+  }
+  
+  .heading-text {
+    position: absolute; /* Memungkinkan penempatan bebas di dalam header */
+    color: var(--color-white); /* Mengatur warna teks menjadi putih */
+    font-size: 7rem; /* Mengatur ukuran font */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada teks */
+    line-height: 150%; /* Mengatur tinggi baris untuk teks */
+    top: 20%; /* Atur posisi vertikal sesuai kebutuhan */
+    left: 50%; /* Menyelaraskan ke tengah secara horizontal */
+    transform: translateX(-50%); /* Menggeser ke kiri setengah dari lebar elemen */
+  }
+  
+  .sub-heading {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    line-height: 500%;
+    top: 35%; /* Atur posisi vertikal sub-heading di bawah heading text */
+    left: 50%; /* Menyelaraskan ke tengah secara horizontal */
+    transform: translateX(-50%); /* Menggeser ke kiri setengah dari lebar elemen */
+  }
+  
+  .shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url('../pic/shape.png');
+    width: 100%;
+    height: 100px;
+    background-size: 1000px 100px;
+    animation: Anii infinite ease-in-out 3s ;
+    animation-delay: calc(var(--i) * 0.25s);
+    transition: var(--transition);
+  }
+  
+  #shape1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;    
+  }
+  
+  #shape2{
+    z-index: 999;
+    opacity: .5;
+    background-position-x: 300px;
+  }
+  
+  #shape3{
+    z-index: 998;
+    opacity: .2;
+    background-position-x: 200px;
+  }
+  
+  #shape4{
+    z-index: 999;
+    opacity: .7;
+    background-position-x: 100px;
+  }
+  
+  @keyframes Anii {
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+  }
+  /* ................End Header Section................... */
+  
+  /* ................Start Parallax-Demo Section................... */
+  .parallax-demo{
+    background: var(--color-white);/* Mengatur latar belakang menjadi putih */
+    position: relative; /* Mengatur posisi relatif untuk elemen anak */
+    padding-top: 6rem; /* Menambahkan padding atas/bawah dan kiri/kanan */
+  }
+  
+  .parallax-demo h2 {
+    font-size: 3rem; /* Mengatur ukuran font untuk heading */
+    margin-bottom: 4rem; /* Menambahkan margin bawah untuk jarak antara heading dan konten di bawahnya */
+  }
+  
+  .parallax-demo p {
+    line-height: 140%; /* Mengatur tinggi baris untuk paragraf */
+    padding-bottom: 2rem; /* Menambahkan padding bawah untuk jarak antar paragraf */
+  }
+  /* ...............End Parallax-Demo Section................... */
+  
+  /* ...............Start Styling Content................... */
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .sub-content {
+    position: relative;
+    z-index: 1; /* Pastikan konten berada di depan latar belakang */
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .more-content {
+    margin-top: 100vh; /* Tambahkan margin untuk membuat halaman dapat di-scroll */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk konten */
+    border-radius: 10px;
+  }
+  /* ...............End Styling Content................... */
+
+
+  .status-box {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  .cup {
+    width: 150px;
+    height: 300px;
+    border: 5px solid #3498db;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    position: relative;
+    background-color: #ecf0f1;
+  }
+  
+  .air {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    font-weight: bold;
+  }
+  
+  .chart-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-container {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  /* ...............Start About Us Frame Photo................... */
+  .team-member {
+    text-align: center;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Tambahkan transisi untuk efek hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  }
+  
+  .team-member img {
+    width: 100%;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    border: 5px solid #fff; /* Tambahkan border putih untuk efek frame */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Bayangan pada gambar */
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px); /* Efek mengangkat saat hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
+  }
+  
+  .team-section {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .team-member {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    font-size: 13px;
+    padding: 10px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  /* ...............End About Us Frame Photo................... */
+
+  /* ................Start Components Page................... */
+.deskripsi{
+    padding-right: 300px;
+}
+.deskripsi-jumper {
+    padding: auto;
+}
+section {
+    margin: right;
+    display: flex;
+    margin-bottom: 100px;
+    padding-right: 50px;  
+}
+.sensor-image {
+    width: 300px; 
+    height: auto; 
+    display: flex;
+    margin: auto; 
+    padding-left: 150px;
+}
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+}
+.kolom-kanan {
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.hdua {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+.resistor-image {
+    width: 400px; 
+    height: auto; 
+    display: flex;
+    margin: auto; 
+    padding-right: 150px;
+}
+.esp-image {
+    width: 300px; 
+    height: auto; 
+    display: flex;
+    margin: auto; 
+    padding-left: 150px;
+}
+.led-image {
+    width: 300px; 
+    height: auto; 
+    display: flex;
+    margin: auto; 
+    padding-right: 150px;
+}
+.buzzer-image {
+    width: 300px; 
+    height: auto; 
+    display: flex;
+    margin: auto; 
+    padding-left: 150px;
+}
+.lcs-image {
+    width: 300px; 
+    height: auto; 
+    display: flex;
+    margin: auto; 
+    padding-right: 150px;
+}
+.breadboard-image {
+    width: 300px; 
+    height: auto; 
+    display: flex;
+    margin: auto; 
+    padding-left: 150px;
+}
+.jumper-image {
+    width: 300px; 
+    height: auto; 
+    display: flex;
+    margin: auto; 
+    margin-right: 200px;
+}
+  
+
+  /* ...............Start Footer................... */
+  .footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang footer dengan transparansi */
+    color: white; /* Warna teks footer */
+    width: 100%; /* Memastikan footer memenuhi lebar penuh */
+    position: relative; /* Memastikan footer berada di bawah konten */
+    left: 0;
+    right: 0;
+    max-width: 100vw;;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  /* ...............End Footer................... */
